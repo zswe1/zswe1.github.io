@@ -71,6 +71,269 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-4.OB官方Markdown文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/03/4.OB%E5%AE%98%E6%96%B9Markdown%E6%96%87%E6%A1%A3/" class="article-date">
+  <time class="dt-published" datetime="2023-05-02T16:23:33.000Z" itemprop="datePublished">2023-05-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/03/4.OB%E5%AE%98%E6%96%B9Markdown%E6%96%87%E6%A1%A3/">ob Markdown语法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Obsidian 是一个基于 Markdown 进行记录的知识库软件。</p>
+<p>目前 Obsidian 支持的格式如下：</p>
+<hr>
+<h3 id="内部链接"><a href="#内部链接" class="headerlink" title="内部链接"></a>内部链接</h3><p>通过<code>[[]]</code>来链接库中任意一个文件。</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">链接一篇笔记：[[内部链接]]。</span><br></pre></td></tr></table></figure>
+
+<p>链接一篇笔记：[[内部链接]]。</p>
+<hr>
+<h3 id="嵌入文件"><a href="#嵌入文件" class="headerlink" title="嵌入文件"></a>嵌入文件</h3><p>在笔记中插入其他文件（更多细节请阅读[[嵌入文件]]）。这里将演示如何插入一篇笔记的某个章节：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![[Obsidian#什么是 Obsidian]]</span><br></pre></td></tr></table></figure>
+
+<p>![[Obsidian#什么是 Obsidian]]</p>
+<hr>
+<h3 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h3><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 这是小标题 1</span></span><br><span class="line"><span class="section">## 这是小标题 2</span></span><br><span class="line"><span class="section">### 这是小标题 3 </span></span><br><span class="line"><span class="section">#### 这是小标题 4</span></span><br><span class="line"><span class="section">##### 这是小标题 5</span></span><br><span class="line"><span class="section">###### 这是小标题 6</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="这是小标题-1"><a href="#这是小标题-1" class="headerlink" title="这是小标题 1"></a>这是小标题 1</h1><h2 id="这是小标题-2"><a href="#这是小标题-2" class="headerlink" title="这是小标题 2"></a>这是小标题 2</h2><h3 id="这是小标题-3"><a href="#这是小标题-3" class="headerlink" title="这是小标题 3"></a>这是小标题 3</h3><h4 id="这是小标题-4"><a href="#这是小标题-4" class="headerlink" title="这是小标题 4"></a>这是小标题 4</h4><h5 id="这是小标题-5"><a href="#这是小标题-5" class="headerlink" title="这是小标题 5"></a>这是小标题 5</h5><h6 id="这是小标题-6"><a href="#这是小标题-6" class="headerlink" title="这是小标题 6"></a>这是小标题 6</h6><hr>
+<h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*这是斜体示例*</span></span><br><span class="line"><span class="emphasis">_这是斜体的另一种写法_</span></span><br></pre></td></tr></table></figure>
+
+<p><em>这是斜体示例</em><br><em>这是斜体的另一种写法</em></p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**这是粗体示例**</span></span><br><span class="line"><span class="strong">__这是粗体的另一种写法__</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>这是粗体示例</strong><br><strong>这是粗体的另一种写法</strong></p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">_你也<span class="strong">**可以**</span>将它们配合使用_</span></span><br></pre></td></tr></table></figure>
+
+<p><em>你也<strong>可以</strong>将它们配合使用</em></p>
+<hr>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> 项目 1</span><br><span class="line"><span class="bullet">-</span> 项目 2</span><br><span class="line"><span class="bullet">	-</span> 项目 2a</span><br><span class="line"><span class="bullet">	-</span> 项目 2b</span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 项目 1</span><br><span class="line"><span class="bullet">1.</span> 项目 2</span><br><span class="line"><span class="bullet">1.</span> 项目 3</span><br><span class="line"><span class="bullet">   1.</span> 项目 3a</span><br><span class="line"><span class="bullet">   1.</span> 项目 3b</span><br></pre></td></tr></table></figure>
+
+<p>无序列表：</p>
+<ul>
+<li>项目 1</li>
+<li>项目 2<ul>
+<li>项目 2a</li>
+<li>项目 2b</li>
+</ul>
+</li>
+</ul>
+<p>有序列表：</p>
+<ol>
+<li>项目 1</li>
+<li>项目 2</li>
+<li>项目 3<ol>
+<li>项目 3a</li>
+<li>项目 3b</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Engelbart</span>](<span class="link">https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" alt="Engelbart"></p>
+<h4 id="调整图片大小"><a href="#调整图片大小" class="headerlink" title="调整图片大小"></a>调整图片大小</h4><p>比如，将上面的示例图片调整为100像素宽：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Engelbart|100</span>](<span class="link">https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg" alt="Engelbart|100"></p>
+<hr>
+<h3 id="其他链接"><a href="#其他链接" class="headerlink" title="其他链接"></a>其他链接</h3><h4 id="外部链接"><a href="#外部链接" class="headerlink" title="外部链接"></a>外部链接</h4><p>Markdown 风格的链接既可以用来指向网页这类外部对象，也可以用来指向库中的笔记或者图片。</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://obsidian.md - automatic!</span><br><span class="line">[<span class="string">Obsidian</span>](<span class="link">http://obsidian.md</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="http://obsidian.md/">http://obsidian.md</a> - 自动化!<br><a target="_blank" rel="noopener" href="http://obsidian.md/">Obsidian</a></p>
+<h4 id="Obsidian-URI"><a href="#Obsidian-URI" class="headerlink" title="Obsidian URI"></a>Obsidian URI</h4><p>[[使用 Obsidian URI|Obsidian URI]] 可以让你在其他应用或 Obsidian 的其他库中打开当前库的某篇笔记。</p>
+<p>比如，你可以通过以下方式跳转到某个库中的某篇笔记（请注意 [[使用 Obsidian URI#编码|URI 的编码]]）：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">打开某篇笔记</span>](<span class="link">obsidian://open?path=D:%2Fpath%2Fto%2Ffile.md</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="obsidian://open?path=D:%2Fpath%2Fto%2Ffile.md">打开某篇笔记</a></p>
+<p>除了通过笔记的地址来链接笔记外，你也可以通过笔记所在的库名称以及笔记名称来链接该笔记：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">打开某篇笔记</span>](<span class="link">obsidian://open?vault=MainVault&amp;file=MyNote.md</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="obsidian://open?vault=MainVault&file=MyNote.md">打开某篇笔记</a></p>
+<h4 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h4><p>如果 url 中含有空格的话，空格需要转义为 <code>%20</code>，如：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">Export options</span>](<span class="link">Pasted%20image</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="Pasted%20image">Export options</a></p>
+<p>当然，你也可以用 <code>&lt;&gt;</code> 将空格包含起来，如：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">Slides Demo</span>](<span class="link">&lt;Slides Demo&gt;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="Slides%20Demo">Slides Demo</a></p>
+<hr>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.</span></span><br><span class="line"></span><br><span class="line">\- Doug Engelbart, 1961</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.</p>
+</blockquote>
+<p>- Doug Engelbart, 1961</p>
+<hr>
+<h3 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h3><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一行中被 <span class="code">`反引号`</span> 括起来的文字会以代码格式显示。</span><br></pre></td></tr></table></figure>
+
+<p>一行中被 <code>反引号</code> 括起来的文字会以代码格式显示。</p>
+<hr>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>Obsidian 会将六个反引号括起来的内容识别为代码块，并将其按代码格式显示。代码块支持语法高亮功能，你可以在代码块的第一行（即开头处的反引号后）声明语言来使用特定的语法高亮。</p>
+<p>代码块的语法高亮实际是使用 prismjs 来实现的，因此你可以到<a target="_blank" rel="noopener" href="https://prismjs.com/#supported-languages">他们的网站</a> 来查看其支持的语言。</p>
+<pre><code>```js
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```js</span><br><span class="line">function fancyAlert(arg) &#123;</span><br><span class="line">  if(arg) &#123;</span><br><span class="line">    $.facebox(&#123;div:&#x27;#foo&#x27;&#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果你使用 Tab 键对段落进行缩进，这段文本在预览模式下也会被识别为代码块。</span><br></pre></td></tr></table></figure>
+
+    
+    如果你使用 Tab 键对段落进行缩进，这段文本在预览模式下也会被识别为代码块。
+    
+---
+
+### 任务列表
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> [<span class="string">x</span>] 支持 #标签 ，[<span class="string">链接</span>](<span class="link"></span>)，<span class="strong">**样式**</span></span><br><span class="line"><span class="bullet">-</span> [x] 要求包含列表标志（有序表无序表均可，比如 <span class="code">`1.[x]`</span> 同样可以）</span><br><span class="line"><span class="bullet">-</span> [x] 这是一个已经完成的项目</span><br><span class="line"><span class="bullet">-</span> [?] 这也是一个已完成的项目（实际上你可以在其中使用任何字符）</span><br><span class="line"><span class="bullet">-</span> [ ] 这是一个未完成的项目</span><br><span class="line"><span class="bullet">-</span> [ ] 在预览模式下单击选框可以切换项目完成状态</span><br></pre></td></tr></table></figure>
+
+- [x] 支持 #标签 ，[链接]()，**样式**
+- [x] 要求包含列表标志（有序表无序表均可，比如 `1.[x]` 同样可以）
+- [x] 这是一个已经完成的项目
+- [?] 这也是一个已完成的项目（实际上你可以在其中使用任何字符）
+- [ ] 这是一个未完成的项目 
+- [ ] 在预览模式下单击选框可以切换项目完成状态
+
+---
+
+### 表格
+
+你可以使用 `-` 来分割表格的标题行和内容行，使用 `|` 来指定不同的列：
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 标题1          | 标题2          |</span><br><span class="line">| -------------- | -------------- |</span><br><span class="line">| 单元格11的内容 | 单元格12的内容 |</span><br><span class="line">| 单元格21的内容 | 单元格22的内容 |</span><br></pre></td></tr></table></figure>
+
+| 标题1          | 标题2          |
+| -------------- | -------------- |
+| 单元格11的内容 | 单元格12的内容 |
+| 单元格21的内容 | 单元格22的内容 |
+
+---
+
+| 列宽可以通过冒号来进行调整 | 这样你就可以在标题行中输入长标题 |
+| :------------------------- | -------------------------------: |
+| 因为 `:` 的存在            |             不同列将有不同的列宽 |
+
+你可以在表格中添加链接，因为链接能在表格中正确显示。但如果你的链接中包含 `|`，则需要对其进行转义（用 `\|` 代替 `|`），以防止链接中的竖线被错误识别为列分隔符。
+
+如果你在列表中添加链接，他们可以正常的显示与使用。但如果使用的是竖线链接，则需要在竖线前面加上 `\` 来进行转义，防止表格错乱。
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| 标题1                      | 标题2              |</span><br><span class="line">| -------------------------- | ------------------ |</span><br><span class="line">| [[格式化你的笔记\|格式化]] | [[快捷键\|快捷键]] |</span><br></pre></td></tr></table></figure>
+
+| 标题1                      | 标题2              |
+| -------------------------- | ------------------ |
+| [[OB官方Markdown文档\|格式化]] | [[快捷键\|快捷键]] |
+
+---
+
+### 删除线
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在文字两端加上波浪线将会显示为删除效果，比如~~这样~~。</span><br></pre></td></tr></table></figure>
+
+在文字两端加上波浪线将会显示为删除效果，比如~~这样~~。
+
+---
+
+###  高亮
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用两个等号来对文本进行高亮==文本==。</span><br></pre></td></tr></table></figure>
+
+使用两个等号来对文本进行高亮==文本==。
+
+---
+
+### 脚注
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">H脚注的用法很简单，只需要在段落中需要插入脚注的地方标注一个符号，再在段落后对这个符号进行解释即可。比如这是一个简单的脚注，[^1] 这是一个长一些的脚注。[^长脚注]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">^1</span>]: <span class="link">很有用！</span></span><br><span class="line">[<span class="symbol">^长脚注</span>]: <span class="link">这是一个可以写长段落或者代码的地方。</span></span><br><span class="line"><span class="code">	</span></span><br><span class="line"><span class="code">	你可以使用缩进在脚注中纳入其他段落。</span></span><br><span class="line"><span class="code">	</span></span><br><span class="line"><span class="code">	`&#123; 代码 &#125;`</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">	这样你就可以在脚注中添加任意数量的段落了。</span></span><br></pre></td></tr></table></figure>
+
+脚注的用法很简单，只需要在段落中需要插入脚注的地方标注一个符号，再在段落后对这个符号进行解释即可。比如这是一个简单的脚注，[^1] 这是一个长一些的脚注。[^长脚注]
+
+[^1]: 很有用！
+[^长脚注]: 这是一个可以写长段落或者代码的地方。
+    
+    你可以使用缩进在脚注中纳入其他段落。
+    
+    `{ 代码 }`
+
+    这样你就可以在脚注中添加任意数量的段落了。
+    
+你也可以使用行内脚注。^[请注意符号^需要在方括号外]
+
+### 数学公式
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;vmatrix&#125;a &amp; b\\</span><br><span class="line">c &amp; d</span><br><span class="line">\end&#123;vmatrix&#125;=ad-bc$$</span><br></pre></td></tr></table></figure>
+
+$$\begin{vmatrix}a & b\\
+c & d
+\end{vmatrix}=ad-bc$$
+
+你也可以像这样 $e^{2i\pi} = 1$ 使用行内公式。
+
+这里的公式使用的是 LaTeX 语法，你可以到相应网站了解更多相关信息。
+
+### 注释
+
+所谓注释，指的是会在编辑模式中显示，但不会在预览模式中显示的内容。使用 `%%` 可以将内容变为注释。以下为语法：
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">这里是行内注释：%%预览模式下你将看不到这句话%%</span><br><span class="line"></span><br><span class="line">这里是跨行注释：</span><br><span class="line">%%</span><br><span class="line">所谓跨行</span><br><span class="line">就是可以有很多行</span><br><span class="line">%%</span><br></pre></td></tr></table></figure>
+
+以下为示例：
+
+这里是行内注释：%%预览模式下你将看不到这句话%%
+
+这里是跨行注释：
+%%
+所谓跨行
+就是可以有很多行
+%%
+
+### 图表
+
+Obsidian 通过 [Mermaid](https://mermaid-js.github.io/) 及其所提供的[编译器](https://mermaid-js.github.io/mermaid-live-editor)来为用户提供图表的绘制功能。
+
+<pre><code>```mermaid
+sequenceDiagram
+    Alice->>+John: 嗨，John，最近怎样？
+    Alice->>+John: John，听得到我说话吗？
+    John-->>-Alice: 嗨，Alice，我能听到！
+    John-->>-Alice: 最近不错！
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```mermaid</span><br><span class="line">sequenceDiagram</span><br><span class="line">    Alice-&gt;&gt;+John: 嗨，John，最近怎样？</span><br><span class="line">    Alice-&gt;&gt;+John: John，听得到我说话吗？</span><br><span class="line">    John--&gt;&gt;-Alice: 嗨，Alice，我能听到！</span><br><span class="line">    John--&gt;&gt;-Alice: 最近不错！</span><br></pre></td></tr></table></figure>
+
+## 开发小记
+
+总的来说，我们在努力让 Obsidian 的语法不偏离正统的 Markdown 语法太多。总的来看，Obsidian 的语法大多还是基于 CommonMark，包括了一些 GitHub Flavored Markdown（GFM）和 LaTeX，以及我们特有的嵌入文件语法。
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/05/03/4.OB%E5%AE%98%E6%96%B9Markdown%E6%96%87%E6%A1%A3/" data-id="clh7foviz0000rsuxcmcxhm2e" data-title="ob Markdown语法" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E5%AD%A6%E4%B9%A0/" rel="tag">hexo学习</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-3.Markdown语法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/05/03/3.Markdown%E8%AF%AD%E6%B3%95/" class="article-date">
@@ -93,7 +356,56 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>可以吗</p>
+        <p>笔记内容：</p>
+<h3 id="1-斜体："><a href="#1-斜体：" class="headerlink" title="1.斜体："></a>1.斜体：</h3><p><em>apple</em></p>
+<h3 id="2-加粗："><a href="#2-加粗：" class="headerlink" title="2.加粗："></a>2.加粗：</h3><p><strong>apple</strong></p>
+<h3 id="3-标题："><a href="#3-标题：" class="headerlink" title="3.标题："></a>3.标题：</h3><p>共有六级标题，有几个#代表几级<br>(在ob中#后不加空格代表标签)</p>
+<h3 id="4-在-Markdown-中有两种不同的链接种类，但是它们的渲染方式完全相同。"><a href="#4-在-Markdown-中有两种不同的链接种类，但是它们的渲染方式完全相同。" class="headerlink" title="4.在 Markdown 中有两种不同的链接种类，但是它们的渲染方式完全相同。"></a>4.在 Markdown 中有两种不同的链接种类，但是它们的渲染方式完全相同。</h3><p>第一种链接格式叫做 _内联链接_。创建一个内联的链接， 你需要将被链接的文本用方括号 ( <code>[ ]</code> )包裹起来， 然后将链接地址用圆括号 ( <code>( )</code> )包裹起来。 <em>这些括号及以后出现的括号均为英文半角符号</em><br> <a href="www.google.com">Search for it.</a></p>
+<p>另外一种链接叫做 <em>全局</em> 链接。顾名思义，这个链接链接到文档的另外一个位置。<br>这里有一个示例来说明我们想表达什么：</p>
+<h3 id="5-如果你知道怎样使用-Markdown-添加链接，那么你也可以添加图片了。添加图片的语法和添加链接的非常相似。"><a href="#5-如果你知道怎样使用-Markdown-添加链接，那么你也可以添加图片了。添加图片的语法和添加链接的非常相似。" class="headerlink" title="5.如果你知道怎样使用 Markdown 添加链接，那么你也可以添加图片了。添加图片的语法和添加链接的非常相似。"></a>5.如果你知道怎样使用 Markdown 添加链接，那么你也可以添加图片了。添加图片的语法和添加链接的非常相似。</h3><p>添加图片也有两种方法，就像链接一样，并且渲染出来的结果是一样的。 添加链接和图片的区别仅仅在于前面的感叹号 ( <code>!</code> )。<br><img src="https://octodex.github.com/images/bannekat.png" alt="Benjamin Bannekat"></p>
+<p>对于全局图片来说，你应该使用同样的标签模式。你应该在标记前添加一个感叹号然后跟两个方括号。 对于描述文本来说，应该添加两个或以上的图片标签</p>
+<h3 id="6-引用块"><a href="#6-引用块" class="headerlink" title="6.引用块"></a>6.引用块</h3><p>如果您需要为其他来源的内容添加特殊的格式来引起读者的注意， 或为其他杂志的文章设计特殊的格式，那么 Markdown 的_引用块_语法将会非常有用。 引用块是一个拥有特殊格式的句子或段落，为了引起读者的注意。例如：</p>
+<blockquote>
+<p>“无为而治的罪是所有七种罪中最致命的。有传言说，要使邪恶的人实现其目的，只需要好人无所事事。”</p>
+</blockquote>
+<p>要创建一个引用块，您只需要在行首添加大于号（<code>&gt;</code>）。例如：</p>
+<blockquote>
+<p>“无为而治的罪是所有七种罪中最致命的。有传言说，要使邪恶的人实现其目的，只需要好人无所事事。”</p>
+</blockquote>
+<p>做的不错！</p>
+<p>您可以在每一行引用前都添加一个大于号。 当你有多个段落时，这显得很有用。例如：</p>
+<blockquote>
+<p>他的话似乎打动了他自己的天性。他是否说过自己，说过自己是或希望成为自己？<br>斯蒂芬沉默地看着自己的脸。那里充满了悲伤。他谈到自己，担心自己的孤独。</p>
+<p>“你在和谁说话？” 史蒂芬问道。</p>
+<p>克兰利没有回答。</p>
+</blockquote>
+<p>注意：即使是空行也必须包含大于号。这可以确保引用是一个整体。</p>
+<p>在下面的框中，通过在每一行前插入大于号来使它们成为一个引用块整体。</p>
+<p>引用块内可以使用其他的 Markdown 格式，例如斜体，图片或超链接。</p>
+<h3 id="7-列表"><a href="#7-列表" class="headerlink" title="7.列表"></a>7.列表</h3><ul>
+<li>号</li>
+</ul>
+<ol>
+<li>数字</li>
+</ol>
+<p>注意：*  后空一格代表无序列表，不空代表斜体</p>
+<h3 id="8-段落"><a href="#8-段落" class="headerlink" title="8.段落"></a>8.段落</h3><p>_段落间换行_。你可以通过在每一行的结尾输入俩个空格来实现这一点。 空格是不可见的，</p>
+<h3 id="ChatGPT关于Markdown语法的回答参考"><a href="#ChatGPT关于Markdown语法的回答参考" class="headerlink" title="ChatGPT关于Markdown语法的回答参考"></a>ChatGPT关于Markdown语法的回答参考</h3><p>Markdown 是一种轻量级标记语言，常用于编写文档、博客、邮件等等。下面是 Markdown 语法的一些具体内容：</p>
+<ol>
+<li>标题：使用 # 来表示标题，# 的数量表示所属的级别，例如 # 一级标题，## 二级标题，以此类推。</li>
+<li>段落：使用空行来分隔开不同的段落，Markdown 会自动将它们转换成不同的段落。</li>
+<li>列表：使用 * 或者 - 开始一行，表示无序列表；使用数字加 . 开始一行，表示有序列表。</li>
+<li>引用：使用 &gt; 开始一行表示引用，可以多层嵌套，例如 &gt;&gt; 意味着嵌套的引用。</li>
+<li>粗体和斜体：使用 ** 文字 ** 来表示粗体，使用 * 文字 * 表示斜体。</li>
+<li>链接：使用 <a href="%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">链接文字</a> 来表示链接，例如 <a target="_blank" rel="noopener" href="https://www.markdowntutorial.com/">Markdown 教程</a>。</li>
+<li>图片：使用 <img src="/%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" alt="图片描述"> 来表示图片，例如 <img src="https://markdown-here.com/img/icon256.png" alt="Markdown logo">。</li>
+<li>代码：使用 `代码内容` 来表示行内代码，使用 ``` 代码块内容 ``` 来表示多行代码块。</li>
+<li>分割线：使用三个或以上的 - 或者 * 来表示分割线，例如 —- 或者 ****。</li>
+<li>表格：使用 | 来分隔不同的列，使用 - 来表示表头与表内容的分隔线，例如：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3 |</span><br><span class="line">| --- | --- | --- |</span><br><span class="line">| 内容1 | 内容2 | 内容3 |</span><br><span class="line">| 内容4 | 内容5 | 内容6 |</span><br></pre></td></tr></table></figure>
+
+<p>以上是 Markdown 语法的一些基本内容，还有其他的语法标记可以根据需要进一步了解。因为 Markdown 语法易读易写，所以被广泛应用于各种场合。</p>
 
       
     </div>
@@ -134,7 +446,56 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>你好</p>
+        <blockquote>
+<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://juejin.cn/post/6882619951857811469">juejin.cn</a></p>
+</blockquote>
+<p>Hexo 是一个静态的博客网站生成器，生成一个博客只需要分分钟的时间就能搞定。</p>
+<p>Hexo 的博文是支持 Markdown 格式的，发表一篇文章只需要简简单单的几个命令。</p>
+<p><code>hexo new &#39;文章&#39;</code>就会生成一个名为’文章’的 md 文件。</p>
+<p><img src="http://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7e298506fea42d4a3f313daeec12731~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp">一篇新的文章</p>
+<p>在图中位置添加描述，分类以及标签，有利于搜索分类。</p>
+<h2 id="如何向-hexo-博客中插入图片"><a href="#如何向-hexo-博客中插入图片" class="headerlink" title="如何向 hexo 博客中插入图片"></a>如何向 hexo 博客中插入图片</h2><p>众所周知，在 md 文件中插入图片的语法为<code>![]()</code>。</p>
+<p>其中<strong>方括号</strong>是图片描述，<strong>圆括号</strong>是图片路径。</p>
+<p>一般来说有三种图片路径，分别是<strong>相对路径，绝对路径和网络路径</strong>。</p>
+<p>所谓的网络路径就是直接引用网上的图片，直接复制图片地址，放在圆括号中就完事了。</p>
+<p>这种方式十分的方便，但是也存在一定的问题：</p>
+<ul>
+<li>图片失效导致无法加载；</li>
+<li>打开网页后要再请求加载图片；</li>
+<li>原网站限制，如微信公众号的图片会变得不可见等。</li>
+</ul>
+<p>这种方式算是有利有弊。</p>
+<p>绝对路径是图片在计算机中的绝对位置，相对路径是相对于当前文件的路径。</p>
+<p>由于我们的博客是要部署在网站上，部署后会生成新的文件目录，所以我们选择使用相对路径的方式。</p>
+<p>在 hexo 中使用<strong>文章资源文件夹</strong>需要在<code>config.yaml</code>文件中更改一下配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<p>当该配置被应用后，使用<code>hexo new</code>命令创建新文章时，会生成相同名字的文件夹，也就是文章资源文件夹。</p>
+<blockquote>
+<p>由于项目会生成新的文件目录，同时会解析 Markdown 中的图片路径，会导致一个问题。</p>
+<p>如在一个文件目录下，博客名为<code>1.md</code>，相应的存在一个<code>1</code>文件夹存放图片<code>image.jpg</code>。</p>
+<p>在 Typora 编辑器中，普通的 md 文件使用<code>![](1/image.jpg)</code>能在编辑器中正常显示图片。</p>
+<p>在 hexo 中，按理说应该是使用<code>![](image.jpg)</code>，但网页中却无法正常显示。</p>
+<p>此时应该使用这样的方式来引入图片：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img image.jpg 这是一张图片 %&#125;</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>虽然可以正常引用图片了，但是这种引用图片的方式只有一句话能形容，wtf。</p>
+<h2 id="图片插件"><a href="#图片插件" class="headerlink" title="图片插件"></a>图片插件</h2><p>插件 <a href="https://link.juejin.cn/?target=https://github.com/hexojs/hexo-renderer-marked" title="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a> 解决了这个问题。可以只用<code>npm install hexo-renderer-marked</code>命令直接安装，之后在<code>config.yaml</code>中更改配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br><span class="line">复制代码</span><br></pre></td></tr></table></figure>
+
+<p>之后就可以在使用<code>![](image.jpg)</code>的方式愉快的插入图片了。</p>
+<p>我们做了这么多都是为了方便，那么为什么不再方便一点呢。</p>
+<h2 id="hexo-与-Typora-的完美结合"><a href="#hexo-与-Typora-的完美结合" class="headerlink" title="hexo 与 Typora 的完美结合"></a>hexo 与 Typora 的完美结合</h2><p>上述是从文章资源文件夹中引用图片，前提是<strong>先将图片放入到文章资源文件夹</strong>，如果图片数量众多的话，一张一张的放很影响效率。但是不用怕，我们有很方便的解决方法。</p>
+<p><strong>Typora</strong> 是我非常喜欢的 Markdown 文本编辑器，在之前的文章中也介绍过一点。</p>
+<p>Typora 对于插入图片的支持做得非常好，在<code>文件-&gt;偏好设置</code>或者直接<code>&lt;C-,&gt;</code>进入设置。</p>
+<p><img src="http://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/02f33d2d378642e1865e09eba0dbf672~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp">Typora 与 hexo 的完美结合</p>
+<p>使用该配置后，可以直接复制网页中的图片地址，粘贴到 Typora 中后，会直接复制该图片到文章资源文件夹，同时自动更改路径。</p>
+<p>如复制网络路径的图片<code>https://...../image.jpg</code>粘贴到 Typora 中叫<code>文章名</code>的文章后，图片会自动变为<code>![](文章名/image.jpg)</code>。</p>
+<p>但我们知道部署后，文件路径是不同的，所以当我们插入完所有的图片后，我们还需要删除每个图片路径中的<code>文件名/</code>。不慌，也很简单。</p>
+<p>在 Typora 编辑器中，使用<code>&lt;C-f&gt;</code>快捷键，将所有的<code>文章名/</code>替换为空即可删除。</p>
+<p><img src="http://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ba4023889e794ccf82d51a6280da1fe4~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp">image-20201012140945525</p>
+<p>然后再将博客上传，图片就会随着文章一起打包。在网页中就可以看到正常显示的图片，大功告成。</p>
+<p>本文使用 <a href="https://link.juejin.cn/?target=https://mdnice.com/?from=juejin" title="https://mdnice.com/?from=juejin">mdnice</a> 排版</p>
 
       
     </div>
@@ -365,6 +726,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/05/03/4.OB%E5%AE%98%E6%96%B9Markdown%E6%96%87%E6%A1%A3/">ob Markdown语法</a>
+          </li>
         
           <li>
             <a href="/2023/05/03/3.Markdown%E8%AF%AD%E6%B3%95/">Markdown语法学习-hexo学习3</a>
