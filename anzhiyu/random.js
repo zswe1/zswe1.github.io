@@ -1,0 +1,1 @@
+var posts=["2023/05/03/3.Markdown语法/","2023/05/03/2.如何在hexo中插入图片并在线浏览/","2023/05/03/4.OB官方Markdown文档/","2023/04/29/hello-world/","2023/05/03/1.如何发布文章到自己搭建的hexo博客上/","2023/05/03/5.Hexo+github 搭建个人博客并绑定个人域名/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
